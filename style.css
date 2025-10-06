@@ -1,0 +1,73 @@
+
+ :root {
+  --bg: #e2b4c6;
+  --text: #2b1d2f;
+  --accent: #8e5d9f;
+}
+img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 90%;
+  height: 550px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+body {
+    background-color:var(--bg);
+    color: var(--text);
+    font-family:'Times New Roman', Times, serif;
+    line-height: 2;
+    margin:1rem;
+    padding: 1rem;
+    font-size:large;
+}
+h2{
+    color: var(--accent);
+    text-align:start;
+}
+.box {
+  background: rgba(187, 57, 57, 0.15); /* translucent white overlay */
+  backdrop-filter: blur(8px);            /* ✨ glass effect */
+  border-radius: 20px;
+  padding: 1.5rem;
+  margin: 5rem auto;
+  max-width: 700px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+h1{
+  text-align: center;
+  
+}
+@keyframes fadeUp {
+  0%{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}  
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+h3 {
+  text-align: center;
+  
+}
+.secret { filter: blur(19px); transition: filter .2s; }
+.secret:hover { filter: blur(0); }
