@@ -70,4 +70,3 @@ h3 {
   
 }
 .secret { filter: blur(19px); transition: filter .2s; }
-.secret:hover { filter: blur(0); }
